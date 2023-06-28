@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">Weather app</string>
+    <string name="search__btn">SHOW WEATHER</string>
+    <string name="city_placeholder">Enter your city</string>
+    <string name="location_btn">Show weather for your location</string>
+
+    <string name="wind">WIND</string>
+    <string name="humidity">HUMIDITY</string>
+    <string name="pressure">PRESSURE</string>
+    <string name="feels">Feels like</string>
+</resources>

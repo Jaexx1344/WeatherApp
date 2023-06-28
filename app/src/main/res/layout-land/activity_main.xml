@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/gradient"
+    android:padding="30dp"
+    tools:context=".MainActivity">
+
+    <com.google.android.gms.ads.AdView
+        android:id="@+id/adView"
+        android:layout_width="230dp"
+        android:layout_height="50dp"
+        app:adSize="BANNER"
+        app:adUnitId="ca-app-pub-3940256099942544/6300978111"
+        app:layout_constraintBottom_toTopOf="@+id/forecastBtn"
+        app:layout_constraintEnd_toStartOf="@+id/textView4"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"></com.google.android.gms.ads.AdView>
+
+    <EditText
+        android:id="@+id/cityInput"
+        android:layout_width="286dp"
+        android:layout_height="53dp"
+        android:layout_marginStart="50dp"
+        android:layout_marginEnd="50dp"
+        android:backgroundTint="#FFFFFF"
+        android:ems="10"
+        android:fontFamily="sans-serif-light"
+        android:hint="Wprowadź nazwę miasta"
+        android:inputType="textPersonName"
+        android:textColor="#efefef"
+        android:textColorHint="#FFFFFF"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView4"
+        app:layout_constraintVertical_bias="0.068"
+        app:layout_constraintVertical_chainStyle="packed" />
+
+    <Button
+        android:id="@+id/searchBtn"
+        android:layout_width="224dp"
+        android:layout_height="76dp"
+        android:layout_marginEnd="44dp"
+        android:backgroundTint="#9027CCCC"
+        android:fontFamily="sans-serif-light"
+        android:onClick="showWeather"
+        android:paddingLeft="10dp"
+        android:paddingTop="10dp"
+
+        android:paddingRight="10dp"
+
+        android:paddingBottom="10dp"
+        android:shadowColor="#00FFFFFF"
+        android:text="Znajdz pogode"
+        android:textSize="15sp"
+        app:cornerRadius="9dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.719"
+        app:strokeColor="@color/white"
+        app:strokeWidth="2dp" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="226dp"
+        android:layout_height="124dp"
+        android:drawableTop="@drawable/sun"
+        android:fontFamily="sans-serif-light"
+        android:shadowDx="2"
+        android:shadowDy="2"
+        android:shadowRadius="10"
+        android:text="Pogoda Na Już"
+        android:textColor="#fff"
+        android:textSize="40sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/locationButton"
+        android:layout_width="173dp"
+        android:layout_height="69dp"
+        android:backgroundTint="@color/white"
+        android:onClick="onLocationClick"
+        android:text="Pogoda dla Ciebie"
+        android:textColor="#9027CCCC"
+        android:textSize="10sp"
+        app:cornerRadius="10dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.465"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/forecastBtn"
+        app:layout_constraintVertical_bias="0.0"
+        app:strokeColor="#9027CCCC"
+        app:strokeWidth="2dp" />
+
+    <Button
+        android:id="@+id/forecastBtn"
+        android:layout_width="224dp"
+        android:layout_height="76dp"
+        android:layout_marginEnd="50dp"
+        android:backgroundTint="#9027CCCC"
+        android:fontFamily="sans-serif-light"
+        android:onClick="showForecast"
+        android:paddingLeft="10dp"
+        android:paddingTop="10dp"
+        android:paddingRight="10dp"
+        android:paddingBottom="10dp"
+        android:shadowColor="#00FFFFFF"
+        android:text="Wykresy pogodowe"
+        android:textSize="15sp"
+        app:cornerRadius="9dp"
+
+        app:layout_constraintBottom_toBottomOf="parent"
+
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.039"
+        app:layout_constraintStart_toStartOf="@+id/adView"
+        app:layout_constraintTop_toBottomOf="@+id/textView4"
+        app:layout_constraintVertical_bias="0.497"
+        app:strokeColor="@color/white"
+        app:strokeWidth="2dp" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
