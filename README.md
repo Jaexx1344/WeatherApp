@@ -1,3 +1,6 @@
+Pushed as a single complete commit due to setting up a new account on GitHub
+
+
 # WeatherApp
 
 
